@@ -44,7 +44,7 @@ export default {
                 title: 'Landing Page',
                 description: 'Landing Page with adapted slider and menu. Also, there are grid-net for content and added video. Made with Vue.js.',
                 image: '/assets/img7.png',
-                link: 'https://vue-jokes-rouge.vercel.app/'
+                link: 'https://main-page-liard.vercel.app/'
             },  
             {   
                 id: 6,
