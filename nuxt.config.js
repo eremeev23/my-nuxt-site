@@ -4,6 +4,7 @@ export default {
     title: 'Maxim Eremeev',
     meta: [
       { charset: 'utf-8' },
+      {mode: "universal", target: "static"},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
