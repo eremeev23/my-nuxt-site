@@ -71,7 +71,7 @@ export default {
 .about-box {
     width: 100vw;
     margin: 0 auto;
-    min-height: 85vh;
+    min-height: 100vh;
     backdrop-filter: blur(5px);
     padding: 0 15vw;
 }
