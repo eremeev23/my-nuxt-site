@@ -17,7 +17,7 @@
 
           <textarea v-model="message" class="input-text" name="message" placeholder="Type message..." required></textarea>
 
-          <button type="submit" class="submit">Send</button>
+          <button type="submit" class="submit"> Send </button>
 
       </form>
 
