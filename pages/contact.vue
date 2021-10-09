@@ -38,13 +38,28 @@ export default {
     },
     methods: {
         sendMessage() {
+            const form = document.querySelector('form');
+            const mainDiv = document.querySelector('.contact-box')
+            let today = new Date();
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const yyyy = today.getFullYear();
+            today = dd + '.' + mm + '.' + yyyy;
+
             axios.post(`https://portfolio-df2fb-default-rtdb.europe-west1.firebasedatabase.app/posts.json`, 
             {   messages: {
                     company: this.companyName,
                     message: this.message,
-                    email: this.companyEmail
+                    email: this.companyEmail,
+                    date: today
                 }
             })
+            form.style.display = 'none';
+            const sent = document.createElement('h1');
+            sent.classList.add('sent-title');
+            sent.textContent = 'Your message is sent. Thank you. I will reply you soon.';
+            mainDiv.appendChild(sent);
+            
             this.companyName = '';
             this.companyEmail = '';
             this.message = '';
@@ -171,6 +186,12 @@ export default {
     background-position: right center;
     box-shadow: 0 0 20px #29badf;
     text-decoration: none;
+}
+
+/* SENT TITLE */
+.sent-title {
+    margin-top: 10vh;
+    color: #ebac0c;
 }
 
 @media (max-width: 440px ) {
