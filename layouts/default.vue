@@ -41,7 +41,7 @@ export default {
 
       if(!this.getTheme) {
         label.forEach(el => {
-          el.style.color = '#002029'
+          el.style.color = '#fff'
         });
         body.style.background = '#fff';
         header.style.background = '#fff';

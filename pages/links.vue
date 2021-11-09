@@ -7,6 +7,9 @@
                 <a href="https://github.com/maxon32" target="_blank" class="link git">GitHub</a>
             </li>
             <li class="list-item">
+                <a href="https://linkedin.com/in/maksim-eremeev-6446101a9" target="_blank" class="link linkedin">Linkedin</a>
+            </li>
+            <li class="list-item">
                 <a href="https://www.instagram.com/eremeev23" target="_blank" class="link inst">Instagram</a>
             </li>
             <li class="list-item">
@@ -37,7 +40,7 @@ import { mapGetters } from 'vuex'
 
 export default {
     name: 'Links',
-    computed: mapGetters('getTheme'),
+    computed: mapGetters(['getTheme']),
 }
 
 </script>
@@ -80,6 +83,10 @@ export default {
 .git:hover {
     color: #fff;
     text-shadow: 0 0 7px #000;
+}
+.linkedin:hover {
+    color: #0A66C2;
+    text-shadow: #0A66C2 0 0 5px;
 }
 .inst:hover {
     color: #e1306c;

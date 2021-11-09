@@ -11,6 +11,13 @@ export default {
 
         projects: [
             {   
+                id: 0,
+                title: 'Online store gallery',
+                description: 'Store gallery on Nuxt.js. Made form with validation for adding a new item. All items are saving in LocalStorage. Adapted for mobile phones.',
+                image: '/assets/img11.png',
+                link: 'https://shopping-cart-maxon32.vercel.app/'
+            },
+            {   
                 id: 1,
                 title: 'Online store cart',
                 description: 'Online store car on Vue.js with Vuex store.  You can increase and reduce number of items with reactive load on your bill.',

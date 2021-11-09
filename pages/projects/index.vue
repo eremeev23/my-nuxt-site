@@ -21,7 +21,9 @@
                 
               </div>
               <!-- CARD IMAGE -->
-            <img class="image" :src=project.image :alt="project.title" width="390px" height="460px">
+            <div class="image__wrapper">
+              <img class="image" :src=project.image :alt="project.title">
+            </div>
 
           </a>
         </div>
@@ -88,11 +90,20 @@ export default {
 }
 
 .project-link {
+  display: block;
+  height: 100%;
   position: relative;
   text-decoration: none;
   color: #232323;
 }
 
+.image__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .image {
   border: 1px solid #002029;
   border-radius: 15px;
@@ -148,7 +159,7 @@ export default {
   .projects-box {
     min-height: 120vh;
   }
-  .item, .image, .card {
+  .item, .card {
     max-width: 280px;
     max-height: 390px;
   }
@@ -187,7 +198,7 @@ export default {
 
 @media (max-width: 440px ) {
   
-    .projects-list {
+  .projects-list {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -198,8 +209,11 @@ export default {
   .item {
     max-height: 330px;
   }
-  .image, .card {
+  .card {
     max-height: 320px;
+  }
+  .image {
+    max-height: 420px;
   }
 }
 </style>
