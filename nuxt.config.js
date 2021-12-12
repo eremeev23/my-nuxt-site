@@ -4,13 +4,16 @@ export default {
     title: 'Maxim Eremeev',
     meta: [
       { charset: 'utf-8' },
-      {mode: "universal", target: "static"},
+      { mode: "universal", target: "static" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "preconnect", href: 'https://fonts.googleapis.com"' },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin },
+      { href: "https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap", rel: "stylesheet" }
     ]
   },
 
