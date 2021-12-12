@@ -15,7 +15,7 @@ export default {
                 title: 'Online store gallery',
                 description: 'Store gallery on Nuxt.js. Made form with validation for adding a new item. All items are saving in LocalStorage. Adapted for mobile phones.',
                 image: '/assets/img11.png',
-                link: 'https://shopping-cart-maxon32.vercel.app/'
+                link: 'https://store-gallery.vercel.app/'
             },
             {   
                 id: 1,
