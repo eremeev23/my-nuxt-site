@@ -9,8 +9,6 @@
             <li class="list-item">
                 <a href="https://linkedin.com/in/maksim-eremeev-6446101a9" target="_blank" class="link linkedin">Linkedin</a>
             </li>
-            <li class="list-item">
-                <a href="https://www.instagram.com/eremeev23" target="_blank" class="link inst">Instagram</a>
             </li>
             <li class="list-item">
                 <a href="https://vk.com/eremeev23" target="_blank" class="link vk">VK</a>
