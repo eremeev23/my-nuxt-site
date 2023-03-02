@@ -4,8 +4,8 @@
     <!-- THEME SWITCHER -->
     <input id="checkbox" class="checkbox" type="checkbox" @click="checkTheme">
     <label for="checkbox" class="label-check">
-      <span v-show="getTheme">Light theme</span> 
-      <span v-show="!getTheme">Dark theme</span> 
+      <span v-show="getTheme">Light theme</span>
+      <span v-show="!getTheme">Dark theme</span>
     </label>
     <!-- NUXT -->
     <Nuxt />
@@ -28,6 +28,10 @@ export default {
   },
 
   computed: mapGetters(['getTheme']),
+
+  mounted() {
+    window.location = 'https://eremeev-dev.vercel.app'
+  },
 
   methods: {
     ...mapMutations(['changeTheme']),
@@ -198,7 +202,7 @@ Footer {
   #app::before, #app::after{
     width: 270px;
     height: 270px;
-  } 
+  }
   #app::after {
     top: 590px;
     left: 52%;
@@ -209,7 +213,7 @@ Footer {
   }
 }
 @media (max-width: 440px ) {
-  
+
   #app::after, #app::before {
     width: 240px;
     height: 230px;
